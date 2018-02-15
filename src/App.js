@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   weightChange(weight) {
-    this.setState({ weight: weight }, this.SetBmi);
+    this.setState({ weight: weight }, this.setBmi);
   }
 
   setBmi() {
@@ -63,7 +63,7 @@ class App extends Component {
         </form>
         <br />
         <br />
-        <Output />
+        <Output data={this.state} />
       </div>
     );
   }
