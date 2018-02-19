@@ -30,7 +30,7 @@ class App extends Component {
     ).toFixed(2);
 
     this.setState({ bmi: bmi, bmiClass: this.getBmiClass(bmi) }, function() {
-      console.log(this.state);
+      //console.log(this.state);
     });
   }
 
